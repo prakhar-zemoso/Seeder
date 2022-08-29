@@ -9,6 +9,7 @@ interface AvatarProps {
 const AvatarIcon : React.FC<AvatarProps>=({src,alt}:AvatarProps)=>{
     return(
         <Avatar
+        data-testid='avatar'
         alt={alt} 
         src={src}
         sx={{height:'2rem', width:'2rem', borderRadius:3}}
