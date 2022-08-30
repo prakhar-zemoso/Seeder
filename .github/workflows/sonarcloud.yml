@@ -48,6 +48,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Change Dirc
+        run: cd seeds
       - name: Install Dependencies
         run: npm install
       - name: Run Tests
