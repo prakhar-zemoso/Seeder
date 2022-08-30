@@ -3,10 +3,21 @@ import Box from '@mui/material/Box';
 import React from 'react'
 import theme from '../../../theme';
 
+
+const myImgStyle ={
+    width: '50px',
+    height: '50.83px',
+    paddingLeft: '15px',
+    paddingTop:'15px',
+    paddingBottom:'13.33'
+
+}
+
+
 interface DataProps{
     label: string;
     value: string;
-    icon: React.ReactNode
+    icon: string
 }
 
 const TextData: React.FC<DataProps> = ({label,value,icon}:DataProps)=>{
@@ -28,18 +39,10 @@ const TextData: React.FC<DataProps> = ({label,value,icon}:DataProps)=>{
                 backgroundColor:  "#28272B",    
             }}
             >
-                <Box
-                sx={{
-                    width: '30px',
-                    height: '30.83',
-                    paddingLeft: '25px',
-                    paddingTop:'25px',
-                    paddingBottom:'23.33'
-                }}
-                >
-                    {icon}
+               
+                    <img src ={icon} style={myImgStyle}/>
 
-                </Box>
+               
 
             </Box>
         <Box
