@@ -4,7 +4,7 @@ import React from 'react'
 import TextData from '../SingleDataCard';
 
 interface CardProps {
-  icon : React.ReactNode;
+  icon : string;
   label: string;
   value: string
 }

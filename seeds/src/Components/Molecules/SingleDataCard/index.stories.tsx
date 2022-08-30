@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof TextData> = (args)=>(
 export const TempData = Template.bind({});
 
 TempData.args={
-    icon: <Calender/>,
+    icon: Calender,
     label:"Term Cap",
     value: "12 Months",
 }
